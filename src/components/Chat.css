@@ -1,0 +1,55 @@
+/* Embedded chat styles */
+.chat-container {
+  height: 100%;
+  padding: 1.5rem;
+}
+
+.chat-wrapper {
+  height: 100%;
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+  overflow: hidden;
+}
+
+.chat-wrapper iframe {
+  width: 100% !important;
+  height: 100% !important;
+  border: none;
+  background: transparent;
+}
+
+/* Custom styles for the Synthflow iframe */
+:root {
+  /* Primary app colors */
+  --app-primary: rgb(37 99 235); /* blue-600 */
+  --app-primary-hover: rgb(29 78 216); /* blue-700 */
+  --app-gray-background: rgb(243 244 246); /* gray-100 */
+
+  /* Chat styles */
+  --sf-window-background-color: transparent !important;
+  --sf-window-border-radius: 0 !important;
+  --sf-window-box-shadow: none !important;
+  --sf-window-max-width: none !important;
+
+  /* Header styles */
+  --sf-header-background-color: var(--app-primary) !important;
+  --sf-header-text-color: white !important;
+  
+  /* Input styles */
+  --sf-input-border-color: var(--app-primary) !important;
+  --sf-input-focus-border-color: var(--app-primary) !important;
+  --sf-input-button-background: var(--app-primary) !important;
+  --sf-input-button-hover-background: var(--app-primary-hover) !important;
+  
+  /* Message styles */
+  --sf-user-message-background-color: var(--app-primary) !important;
+  --sf-user-message-text-color: white !important;
+  --sf-assistant-message-background-color: var(--app-gray-background) !important;
+  --sf-assistant-message-text-color: black !important;
+
+  /* Actions and buttons */
+  --sf-action-button-background: var(--app-primary) !important;
+  --sf-action-button-hover-background: var(--app-primary-hover) !important;
+  --sf-action-button-text-color: white !important;
+}
